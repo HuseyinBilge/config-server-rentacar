@@ -2,13 +2,10 @@ spring:
   application:
     name: stock-srvc
   datasource:
-    username: postgres
+    username: root
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/inventorydb-dev
+    url: jdbc:mysql://localhost:3309/inventorydb?createDatabaseIfNotExist=true
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
   kafka:
