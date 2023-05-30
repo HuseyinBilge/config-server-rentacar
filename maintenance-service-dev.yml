@@ -3,8 +3,8 @@ spring:
     name: maintenance-service
   datasource:
     username: root
-    password: 12345
-    url: jdbc:mysql://localhost:3306/maintenancedb?createDatabaseIfNotExist=true
+    password: '12345'
+    url: jdbc:mysql://localhost:3308/maintenancedb?createDatabaseIfNotExist=true
   jpa:
     hibernate:
       ddl-auto: update
