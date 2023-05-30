@@ -3,13 +3,10 @@ spring:
   application:
     name: rental-service
   datasource:
-    username: postgres
+    username: root
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/rental-service-db
+    url: jdbc:mysql://localhost:3309/rentaldb?createDatabaseIfNotExist=true
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
   kafka:
